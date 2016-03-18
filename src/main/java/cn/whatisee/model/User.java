@@ -1,0 +1,75 @@
+package cn.whatisee.model;
+
+import java.util.Date;
+
+/**
+ * Created by ppc on 2016/3/8.
+ */
+public class User {
+    private String Id;
+    private String email;
+    private String phone;
+    private String password;
+
+    private String nikcName;
+
+    private Date lastLoginTime;
+    private Date createTime;
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getNikcName() {
+        return nikcName;
+    }
+
+    public void setNikcName(String nikcName) {
+        this.nikcName = nikcName;
+    }
+
+
+    public Date getLastLoginTime() {
+        return lastLoginTime;
+    }
+
+    public void setLastLoginTime(Date lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+}
