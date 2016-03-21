@@ -11,7 +11,7 @@ public class User {
     private String phone;
     private String password;
 
-    private String nikcName;
+    private String nickName;
 
     private Date lastLoginTime;
     private Date createTime;
@@ -48,15 +48,6 @@ public class User {
         this.password = password;
     }
 
-    public String getNikcName() {
-        return nikcName;
-    }
-
-    public void setNikcName(String nikcName) {
-        this.nikcName = nikcName;
-    }
-
-
     public Date getLastLoginTime() {
         return lastLoginTime;
     }
@@ -71,5 +62,13 @@ public class User {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 }

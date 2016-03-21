@@ -1,5 +1,6 @@
 package cn.whatisee.mapper.test;
 
+import cn.whatisee.core.util.BaseTestCase;
 import cn.whatisee.mapper.impl.UserMapperImpl;
 import cn.whatisee.model.User;
 import org.junit.Assert;
@@ -12,9 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by ppc on 2016/3/17.
  */
-@ContextConfiguration("classpath:/spring-test.xml")
-@RunWith(SpringJUnit4ClassRunner.class)
-public class UserMapperTest {
+public class UserMapperTest extends BaseTestCase {
 
     @Autowired
     private UserMapperImpl userMapper;
@@ -29,12 +28,11 @@ public class UserMapperTest {
         User user = new User();
         user.setEmail("diwers@163.com");
         user.setPhone("13041110273");
-        user.setNikcName("diwer");
+        user.setNickName("diwer");
         user.setPassword("123qaz");
         User ouser = userMapper.findUserByEmail("diwers@163.com");
         Assert.assertNotNull(ouser);
-        if (ouser != null) {
-
+        if (ouser == null) {
 
             userMapper.CreateUser(user);
             Assert.assertNotEquals(user.getId(), null);

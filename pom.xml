@@ -18,6 +18,7 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
+        <!--springframework-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -44,6 +45,20 @@
             <version>4.2.4.RELEASE</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.2.4.RELEASE</version>
+        </dependency>
+        <!--缓存支持-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.8.0</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <!--数据库支持-->
+        <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>1.2.2</version>
@@ -53,11 +68,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.18</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>4.2.4.RELEASE</version>
-        </dependency>
+        <!--json 支持-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -68,6 +79,12 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <!--servlet支持-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -83,6 +100,7 @@
             <artifactId>jetty-annotations</artifactId>
             <version>9.2.1.v20140609</version>
         </dependency>
+        <!--日志支持-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -93,6 +111,7 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.19</version>
         </dependency>
+        <!--单元测试支持-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

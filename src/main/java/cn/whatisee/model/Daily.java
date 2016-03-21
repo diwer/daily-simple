@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * Created by ppc on 2016/3/7.
  */
-public class Daily {
+public class Daily extends BaseModel {
 
     private String id;
     private String Content;

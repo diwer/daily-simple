@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by ppc on 2016/3/7.
  */
-public class MultiMedia {
+public class MultiMedia extends BaseModel {
     private  String fileName;
     private  String storeLocation;
     private  String url;

@@ -6,7 +6,6 @@ import cn.whatisee.mapper.mapRow.UserMapRow;
 import cn.whatisee.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -55,7 +54,7 @@ public class UserMapperImpl implements UserMapper {
                 user.getPassword(),
                 new Date(),
                 new Date(),
-                user.getNikcName()
+                user.getNickName()
         );
         return user;
     }
@@ -75,8 +74,6 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public boolean ExchangePassword(String userId, String password) {
         try {
-
-
             String newPassword = MD5Util.parseStrToMd5U32(password);
             jdbcTemplate.update(SQL_UPDATE_PASSWORD, newPassword, userId);
             return true;

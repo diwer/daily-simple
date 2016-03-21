@@ -1,12 +1,12 @@
 package cn.whatisee.mapper.test;
 
+import cn.whatisee.core.util.BaseTestCase;
 import cn.whatisee.mapper.DailyMapper;
 import cn.whatisee.mapper.UserMapper;
 import cn.whatisee.mapper.exception.NotFindException;
 import cn.whatisee.model.Daily;
 import cn.whatisee.model.DailyStatus;
 import cn.whatisee.model.User;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,9 +20,8 @@ import java.util.List;
 /**
  * Created by ppc on 2016/3/17.
  */
-@ContextConfiguration("/spring-test.xml")
-@RunWith(SpringJUnit4ClassRunner.class)
-public class DailyMapperTest {
+
+public class DailyMapperTest extends BaseTestCase {
 
     @Autowired
     private DailyMapper dailyMapper;

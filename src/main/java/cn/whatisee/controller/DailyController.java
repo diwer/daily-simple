@@ -1,7 +1,7 @@
 package cn.whatisee.controller;
 
 import cn.whatisee.model.Daily;
-import cn.whatisee.service.impl.DailyService;
+import cn.whatisee.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class DailyController {
 
     @Autowired
-    private DailyService dailyService;
+    private UserService userService;
 
     @RequestMapping("/daily/")
     public String dailyIndex(){

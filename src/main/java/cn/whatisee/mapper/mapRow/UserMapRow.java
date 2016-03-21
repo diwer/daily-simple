@@ -17,7 +17,7 @@ public  final class UserMapRow implements RowMapper<User> {
         user.setEmail(rs.getString("email"));
         user.setPassword(rs.getString("password"));
         user.setLastLoginTime(rs.getDate("lastlogintime"));
-        user.setNikcName(rs.getString("nickname"));
+        user.setNickName(rs.getString("nickname"));
         user.setPhone(rs.getString("phone"));
         return user;
     }
