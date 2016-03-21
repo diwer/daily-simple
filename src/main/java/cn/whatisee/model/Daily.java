@@ -18,7 +18,7 @@ public class Daily {
     private String videoUrl;
     private boolean isDelete;
     private String userId;
-    private int status;
+    private int dailystatus;
     private int reportCount;
     private int likeCount;
 
@@ -72,17 +72,6 @@ public class Daily {
 //    }
 
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public int getReportCount() {
-        return reportCount;
-    }
 
     public void setReportCount(int reportCount) {
         this.reportCount = reportCount;
@@ -158,5 +147,13 @@ public class Daily {
 
     public void setVideoUrl(String videoUrl) {
         this.videoUrl = videoUrl;
+    }
+
+    public int getDailystatus() {
+        return dailystatus;
+    }
+
+    public void setDailystatus(int dailystatus) {
+        this.dailystatus = dailystatus;
     }
 }

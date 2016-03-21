@@ -75,13 +75,22 @@ public class DailyMapperImpl implements DailyMapper {
             }
         }
         StringBuilder builder = new StringBuilder();
-        builder.append("update dy_daily");
+        builder.append("update dy_daily set ");
+        String id="";
         for (Map.Entry<String, Object> entry : updateMap.entrySet()) {
-
-            builder.append(String.format("set {}={},", entry.getKey(), entry.getValue()));
+            if(entry.getKey()=="id"){
+                id=(String) entry.getValue();
+            }else {
+                if(entry.getValue() instanceof String||entry.getValue() instanceof Date){
+                    builder.append(String.format(" %s='%s',", entry.getKey(), entry.getValue()));
+                }else {
+                    builder.append(String.format(" %s=%s,", entry.getKey(), entry.getValue()));
+                }
+            }
 
         }
         builder.delete(builder.length() - 1, builder.length());
+        builder.append(String.format(" where id='%s'",id));
         try {
             jdbcTemplate.update(builder.toString());
         } catch (DataAccessException excp) {
@@ -120,14 +129,14 @@ public class DailyMapperImpl implements DailyMapper {
 
         parameters.put("id", daily.getId());
         parameters.put("content", daily.getContent());
-        parameters.put("createtime", new Date());
+        parameters.put("createdate", new Date());
         parameters.put("likecount", 0);
         parameters.put("reportcount", 0);
         parameters.put("isdelete", 0);
         parameters.put("userid", daily.getUserId());
         parameters.put("location", daily.getLocation());
         parameters.put("weather", daily.getWeather());
-        parameters.put("status", daily.getStatus());
+        parameters.put("dailystatus", daily.getDailystatus());
         parameters.put("videourl", daily.getVideoUrl());
         parameters.put("title", daily.getTitle());
         parameters.put("tag", daily.getTag());

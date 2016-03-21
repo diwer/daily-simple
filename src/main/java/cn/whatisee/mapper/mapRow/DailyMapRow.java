@@ -17,13 +17,13 @@ public  final class DailyMapRow implements RowMapper<Daily> {
         daily.setId(resultSet.getString("id"));
         daily.setWeather(resultSet.getString("weather"));
         daily.setReportCount(resultSet.getInt("reportcount"));
-        daily.setCreateDate(resultSet.getDate("createtime"));
+        daily.setCreateDate(resultSet.getDate("createdate"));
         daily.setContent(resultSet.getString("content"));
         daily.setLocation(resultSet.getString("location"));
-        daily.setDeleteDate(resultSet.getDate("deletetime"));
+        daily.setDeleteDate(resultSet.getDate("deletedate"));
         daily.setIsDelete(resultSet.getBoolean("isdelete"));
         daily.setLikeCount(resultSet.getInt("likecount"));
-        daily.setStatus(resultSet.getInt("status"));
+        daily.setDailystatus(resultSet.getInt("dailystatus"));
         daily.setUserId(resultSet.getString(("userid")));
         daily.setVideoUrl(resultSet.getString("videoUrl"));
         daily.setTitle(resultSet.getString("title"));
