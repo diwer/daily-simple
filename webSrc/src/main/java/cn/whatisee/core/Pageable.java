@@ -1,9 +1,12 @@
 package cn.whatisee.core;
 
+import cn.whatisee.model.BaseModel;
+
 /**
  * Created by ppc on 2016/3/23.
  */
-public class Pageable {
+public class Pageable extends BaseModel{
+    private static final long serialVersionUID = -1350934974492781566L;
     private int index;
     private int pageSize;
 

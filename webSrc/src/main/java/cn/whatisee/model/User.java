@@ -5,7 +5,8 @@ import java.util.Date;
 /**
  * Created by ppc on 2016/3/8.
  */
-public class User {
+public class User extends BaseModel {
+    private static final long serialVersionUID = 7104373846639145632L;
     private String Id;
     private String email;
     private String phone;

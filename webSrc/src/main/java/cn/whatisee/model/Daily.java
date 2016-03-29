@@ -8,20 +8,20 @@ import java.util.Date;
  */
 public class Daily extends BaseModel {
 
+    private static final long serialVersionUID = -2881039864522495686L;
     private String id;
     private String Content;
     private ArrayList<Image> imageList;
     private Date createDate;
     private Date deleteDate;
     private String title;
-    //private Video video;`
+    private Video video;
     private String videoUrl;
     private boolean isDelete;
     private String userId;
     private int dailystatus;
     private int reportCount;
     private int likeCount;
-
     private String Location;
     private String Weather;
 
@@ -70,7 +70,6 @@ public class Daily extends BaseModel {
 //    public void setVideo(Video video) {
 //        this.video = video;
 //    }
-
 
 
     public void setReportCount(int reportCount) {

@@ -5,6 +5,7 @@ package cn.whatisee.model;
  */
 public class Image extends MultiMedia {
 
+    private static final long serialVersionUID = -94561397120329104L;
     private float width;
     private float height;
 

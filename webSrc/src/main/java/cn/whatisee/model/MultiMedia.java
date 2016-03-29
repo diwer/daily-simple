@@ -6,6 +6,7 @@ import java.util.Date;
  * Created by ppc on 2016/3/7.
  */
 public class MultiMedia extends BaseModel {
+    private static final long serialVersionUID = 5420039383663159675L;
     private  String fileName;
     private  String storeLocation;
     private  String url;

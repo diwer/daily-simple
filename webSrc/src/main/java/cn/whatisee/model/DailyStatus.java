@@ -4,6 +4,7 @@ package cn.whatisee.model;
  * Created by ppc on 2016/3/8.
  */
 public enum DailyStatus {
+
     Normal("正常", 1),
     Reported("被举报", 2);
 

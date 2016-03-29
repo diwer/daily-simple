@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="daily:war exploded">
+  <artifact type="exploded-war" name="daily-simple:war exploded">
     <output-path>$PROJECT_DIR$/target/daily-simple</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="daily" />
+          <element id="module-output" name="daily-simple" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.2.4.RELEASE" />
@@ -57,7 +57,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/daily-simple/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="daily/web/Web" />
+      <element id="javaee-facet-resources" facet="daily-simple/web/Web" />
     </root>
   </artifact>
 </component>

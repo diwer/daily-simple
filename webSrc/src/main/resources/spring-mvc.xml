@@ -14,10 +14,16 @@
     <description>Spring公共配置</description>
 
     <mvc:resources mapping="/resources/**" location="/resources/"/>
+
     <mvc:annotation-driven/>
     <!--// <context:annotation-config/>-->
     <context:component-scan base-package="cn.whatisee"></context:component-scan>
-
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" >
+        <property name="hostName" value="192.168.99.100"></property>
+    </bean>
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate" >
+        <property name="connectionFactory" value="jedisConnectionFactory"></property>
+    </bean>
     <tx:annotation-driven transaction-manager="txManager"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
