@@ -1,17 +1,14 @@
 package cn.whatisee.cache.redis;
 
 import cn.whatisee.cache.CacheException;
-import cn.whatisee.cache.ICacheClient;
 import cn.whatisee.core.util.CollectionUtil;
 import cn.whatisee.core.util.StringUtils;
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.io.Reader;
-import java.io.StringReader;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -19,26 +16,28 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by ppc on 2016/3/28.
  */
-public class RedisClient<T> implements ICacheClient<T> {
-    private StringRedisTemplate client;
+@Component
+public class RedisClient<T> extends AbstractRedisClient<T> {
+
     private Class<T> type;
     private ObjectMapper objectMapper;
 
-    @Autowired
-    public RedisClient(StringRedisTemplate template, Class<T> type) {
-        this.client = template;
-        this.type = type;
+    public RedisClient() {
         objectMapper = new ObjectMapper();
 
     }
 
+
+    @Autowired
+    public void setClient(StringRedisTemplate template) {
+        this.client = template;
+    }
+
     private Object readValue(String jsonValue, Class<T> type) throws IOException {
-        if (StringUtils.isNotEmpty(jsonValue)) {
+        if (StringUtils.isEmpty(jsonValue)) {
             return null;
         }
-        Reader reader = new StringReader(jsonValue);
-        JsonParser parser = objectMapper.getFactory().createParser(reader);
-        return objectMapper.readValues(parser, type);
+        return objectMapper.readValue(jsonValue, type);
     }
 
     @Override
@@ -63,9 +62,9 @@ public class RedisClient<T> implements ICacheClient<T> {
 
 
     @Override
-    public Collection<String> keys(String key) throws CacheException {
+    public Set<String> keys(String key) throws CacheException {
         try {
-            return client.keys(key);
+            return client.keys(key+"*");
         } catch (Exception exception) {
             System.out.printf(exception.getMessage());
             throw new CacheException("Error occured while getting T from cache, key = " + key, exception);
@@ -74,11 +73,10 @@ public class RedisClient<T> implements ICacheClient<T> {
     }
 
     @Override
-    public <T> Map<String, T> getMulti(Collection<String> keys) throws CacheException {
+    public <T> Map<String, T> getMulti(List<String> keys) throws CacheException {
         try {
             if (CollectionUtil.isEmpty(keys))
                 return new HashMap<>();
-            List listKey = Arrays.asList(keys);
             List listValue = this.client.opsForValue().multiGet(keys);
             if (listValue == null) {
                 return null;
@@ -86,7 +84,7 @@ public class RedisClient<T> implements ICacheClient<T> {
                 Map<String, T> values = new HashMap<>();
 
                 for (int i = 0; i < listValue.size(); ++i) {
-                    values.put((String) listKey.get(i), (T)readValue((String) listValue.get(i), type));
+                    values.put((String) keys.get(i), (T) readValue((String) listValue.get(i), type));
                 }
                 return values;
             }
@@ -102,7 +100,6 @@ public class RedisClient<T> implements ICacheClient<T> {
         try {
             String jsonInString = objectMapper.writeValueAsString(value);
             this.client.opsForValue().set(key, jsonInString);
-
         } catch (Exception exception) {
             throw new CacheException("Error occured while setting T from cache,key=" + key, exception);
         }
@@ -153,6 +150,11 @@ public class RedisClient<T> implements ICacheClient<T> {
     @Override
     public <T> void replace(String key, T value, int expire) throws CacheException {
         set(key, value, expire);
+    }
+
+    @Override
+    public  void setType(Class<T> type) {
+        this.type = type;
     }
 
 
