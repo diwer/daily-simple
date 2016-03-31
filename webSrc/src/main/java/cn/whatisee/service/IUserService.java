@@ -13,5 +13,7 @@ public interface IUserService {
 
     User RegistryUserByEmail(String email, String password) throws EmailHaveUsedException;
 
-    boolean ExChangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception;
+    boolean exchangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception;
+
+    User getUserByPhone(String phone);
 }

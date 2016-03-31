@@ -13,18 +13,27 @@
        default-lazy-init="true">
     <description>Spring公共配置</description>
 
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <mvc:annotation-driven/>
-    <!--// <context:annotation-config/>-->
-    <context:component-scan base-package="cn.whatisee"></context:component-scan>
+    <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <!--// <context:annotation-config/>-->
+    <context:component-scan base-package="cn.whatisee"/>
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="usePool"  value="true"/>
+        <property name="port" value="6379"/>
+        <property name="hostName" value="192.168.99.100"/>
+    </bean>
+
+    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+        <property name="connectionFactory" ref="jedisConnectionFactory"></property>
+    </bean>
     <tx:annotation-driven transaction-manager="txManager"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/daily_db"/>
         <property name="username" value="root"/>
-        <property name="password" value="1234"/>
+        <property name="password" value="root"/>
         <property name="initialSize" value="5"/>
         <property name="maxActive" value="10"/>
     </bean>

@@ -10,13 +10,14 @@ import cn.whatisee.service.exception.NotFindException;
 import cn.whatisee.service.exception.PhoneHaveUsedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 
 /**
  * Created by ppc on 2016/3/8.
  */
-@Component
+@Service
 public class UserService implements IUserService, IBaseService {
 
     @Autowired
@@ -44,7 +45,7 @@ public class UserService implements IUserService, IBaseService {
     }
 
     @Override
-    public boolean ExChangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception {
+    public boolean exchangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception {
 
         User user = userMapper.findUserById(userId);
         if (user == null) {
@@ -55,6 +56,11 @@ public class UserService implements IUserService, IBaseService {
         }
         return userMapper.ExchangePassword(userId, newPassword);
 
+    }
+
+    @Override
+    public User getUserByPhone(String phone) {
+        return  userMapper.findUserByPhone(phone);
     }
 
     private User RegisterUser(String email, String phone, String password) {

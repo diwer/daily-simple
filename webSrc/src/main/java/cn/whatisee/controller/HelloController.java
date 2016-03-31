@@ -1,9 +1,11 @@
 package cn.whatisee.controller;
 
 
+import cn.whatisee.service.impl.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +25,8 @@ import java.util.List;
 @Controller
 public class HelloController {
 
-
+    @Autowired
+    private UserService userService;
     private class User {
         public User(String name, int sex) {
             this.name = name;
@@ -79,17 +82,16 @@ public class HelloController {
     }
 
     @RequestMapping("/hello")
+    @ResponseBody
     public String helloWorld() {
-        return "helloWorld";
+        return  userService.getUserByPhone("13041110273").getPhone();
+        //return "helloWorld";
     }
 
     @RequestMapping(value = "/json", consumes = "application/json")
     @ResponseBody
     public String helloJson() {
-
-
         User obj = new User("ming", 1);
-
         //Object to JSON in file
         obj.init();
         ObjectWriter writer = new ObjectMapper().writer().withDefaultPrettyPrinter();

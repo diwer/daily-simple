@@ -14,9 +14,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath*:/app-base-config.xml
             classpath*:/spring-mvc.xml
-            classpath*:spring-test.xml
         </param-value>
     </context-param>
     <servlet>

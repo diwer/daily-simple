@@ -17,6 +17,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <dependencies>
         <!--springframework-->
         <dependency>
@@ -119,18 +120,20 @@
         </dependency>
 
     </dependencies>
+
     <build>
         <finalName>daily-simple</finalName>
         <plugins>
-
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://127.0.0.1:8050/manager/text</url>
-                    <server>tomcat</server>
+                    <port>9090</port>
                     <path>/</path>
+                    <uriEncoding>UTF-8</uriEncoding>
+                    <finalName>daily</finalName>
+                    <server>tomcat7</server>
                 </configuration>
             </plugin>
             <plugin>
@@ -149,6 +152,7 @@
             <!--<version>9.2.1.v20140609</version>-->
             <!--</plugin>-->
         </plugins>
+
     </build>
 
 </project>
