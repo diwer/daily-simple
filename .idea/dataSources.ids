@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - daily_db@localhost" uuid="159f5e1a-cb78-44e3-bba8-c64e62a12f95">
+    <database-info product="MySQL" version="5.7.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="daily_db"/>
+      <table id="2" parent="1" name="dy_daily">
+        <comment>日记表</comment>
+      </table>
+      <table id="3" parent="1" name="dy_image">
+        <comment>图片表</comment>
+      </table>
+      <table id="4" parent="1" name="dy_user">
+        <comment>用户表</comment>
+      </table>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="6" parent="2" name="content">
+        <data-type>text</data-type>
+      </column>
+      <column id="7" parent="2" name="isdelete">
+        <comment>1为删除，0为正常</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="8" parent="2" name="createdate">
+        <data-type>date</data-type>
+      </column>
+      <column id="9" parent="2" name="title">
+        <comment>标题（预留）</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="10" parent="2" name="deletedate">
+        <data-type>date</data-type>
+      </column>
+      <column id="11" parent="2" name="userid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="12" parent="2" name="videourl">
+        <data-type>varchar(300)</data-type>
+      </column>
+      <column id="13" parent="2" name="audiourl">
+        <data-type>varchar(300)</data-type>
+      </column>
+      <column id="14" parent="2" name="likecount">
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="15" parent="2" name="Location">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="16" parent="2" name="weather">
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="17" parent="2" name="tag">
+        <comment>(预留)</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="18" parent="2" name="dailystatus">
+        <comment>日记状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="19" parent="2" name="reportcount">
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="20" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="21" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="22" parent="3" name="filename">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="23" parent="3" name="filepath">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="24" parent="3" name="orderno">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="25" parent="3" name="url">
+        <data-type>varchar(300)</data-type>
+      </column>
+      <column id="26" parent="3" name="isdelete">
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="27" parent="3" name="type">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="28" parent="3" name="flagdesc">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="29" parent="3" name="usedId">
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="30" parent="3" name="createtdate">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="31" parent="3" name="createrid">
+        <data-type>varchar(128)</data-type>
+      </column>
+      <key id="32" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="33" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="34" parent="4" name="phone">
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="35" parent="4" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="36" parent="4" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="37" parent="4" name="createtime">
+        <data-type>date</data-type>
+      </column>
+      <column id="38" parent="4" name="lastlogintime">
+        <data-type>date</data-type>
+      </column>
+      <column id="39" parent="4" name="nickname">
+        <data-type>varchar(64)</data-type>
+      </column>
+      <key id="40" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
