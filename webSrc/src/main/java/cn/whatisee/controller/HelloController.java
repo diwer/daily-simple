@@ -1,6 +1,7 @@
 package cn.whatisee.controller;
 
 
+import cn.whatisee.core.util.QnUtil;
 import cn.whatisee.service.impl.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,7 +24,7 @@ import java.util.List;
  * Created by ppc on 2016/2/29.
  */
 @Controller
-public class HelloController {
+public class HelloController extends BaseController {
 
     @Autowired
     private UserService userService;
@@ -111,28 +112,6 @@ public class HelloController {
         return "uploadForm";
     }
 
-    @RequestMapping(path = "/form", method = RequestMethod.POST)
-    public String handleFormUpload(@RequestParam("name") String name,
-                                   @RequestParam("file") Part file) throws IOException {
-        if (!(file.getSize()>0)) {
-            name =file.getName();
-            InputStream inputstream=file.getInputStream();
-            //byte[] bytes = file.getBytes();
-            String rootPath = "d:/upload";
-            File dir = new File(rootPath + File.separator + "tmpFiles");
-            if (!dir.exists())
-                dir.mkdirs();
-            File serverFile = new File(dir.getAbsolutePath()
-                            + File.separator + name);
-            BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
-            int i = 0;
-            while(i != -1) {
-                i = inputstream.read();
-                stream.write(i);
-            }
-            return "redirect:uploadSuccess";
-        }
-        return "redirect:uploadFailure";
-    }
+
 }
 

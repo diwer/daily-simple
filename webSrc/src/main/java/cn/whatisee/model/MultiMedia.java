@@ -7,6 +7,8 @@ import java.util.Date;
  */
 public class MultiMedia extends BaseModel {
     private static final long serialVersionUID = 5420039383663159675L;
+
+    private String id;
     private  String fileName;
     private  String storeLocation;
     private  String url;
@@ -60,5 +62,13 @@ public class MultiMedia extends BaseModel {
 
     public void setCreaterId(String createrId) {
         this.createrId = createrId;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
