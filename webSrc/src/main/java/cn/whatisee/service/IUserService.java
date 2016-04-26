@@ -9,9 +9,9 @@ import cn.whatisee.service.exception.PhoneHaveUsedException;
  */
 public interface IUserService {
 
-    User RegistryUserByPhone(String phone, String password) throws PhoneHaveUsedException;
+    User RegistryUserByPhone(String phone, String password,String nickName) throws PhoneHaveUsedException;
 
-    User RegistryUserByEmail(String email, String password) throws EmailHaveUsedException;
+    User RegistryUserByEmail(String email, String password,String nickName) throws EmailHaveUsedException;
 
     boolean exchangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception;
 

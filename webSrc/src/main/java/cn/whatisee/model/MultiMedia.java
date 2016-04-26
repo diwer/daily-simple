@@ -15,6 +15,11 @@ public class MultiMedia extends BaseModel {
     private Date createDate;
     private boolean isDelete;
     private String createrId;
+    private int orderNo;
+    private String flagDesc;
+
+
+
 
     public String getFileName() {
         return fileName;
@@ -70,5 +75,21 @@ public class MultiMedia extends BaseModel {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(int orderNo) {
+        this.orderNo = orderNo;
+    }
+
+    public String getFlagDesc() {
+        return flagDesc;
+    }
+
+    public void setFlagDesc(String flagDesc) {
+        this.flagDesc = flagDesc;
     }
 }

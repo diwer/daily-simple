@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -32,7 +33,12 @@ public class UserMapperImpl implements UserMapper {
     public User findUserByEmail(String email) {
 
         String SQL_SELECT_DAILY_BY_EMAIL = "select * from dy_user where email=?";
-        return jdbcTemplate.queryForObject(SQL_SELECT_DAILY_BY_EMAIL, new UserMapRow(), email);
+       List<User>  userList= jdbcTemplate.query(SQL_SELECT_DAILY_BY_EMAIL, new UserMapRow(), email);
+        if(userList!=null&&userList.size()>0)
+            return userList.get(0);
+        else {
+            return null;
+        }
     }
 
     @Override
@@ -67,7 +73,7 @@ public class UserMapperImpl implements UserMapper {
     @Override
     public boolean isExistUserByEmail(String email) {
         User user = findUserByEmail(email);
-        return user == null;
+        return user != null;
     }
 
     @Override

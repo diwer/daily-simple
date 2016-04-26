@@ -1,4 +1,4 @@
-package cn.whatisee.Config;
+package cn.whatisee.config;
 
 
 /**

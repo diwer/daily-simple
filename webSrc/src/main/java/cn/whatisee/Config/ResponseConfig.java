@@ -1,4 +1,4 @@
-package cn.whatisee.Config;
+package cn.whatisee.config;
 
 /**
  * Created by mingsheng on 16/4/6.

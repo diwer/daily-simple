@@ -9,7 +9,6 @@ import cn.whatisee.service.exception.EmailHaveUsedException;
 import cn.whatisee.service.exception.NotFindException;
 import cn.whatisee.service.exception.PhoneHaveUsedException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -18,30 +17,30 @@ import java.util.Objects;
  * Created by ppc on 2016/3/8.
  */
 @Service
-public class UserService implements IUserService, IBaseService {
+public class UserServiceImpl implements IUserService, IBaseService {
 
     @Autowired
     private UserMapper userMapper;
 
     @Override
-    public User RegistryUserByEmail(String email, String password) throws EmailHaveUsedException {
+    public User RegistryUserByEmail(String email, String password,String nickName) throws EmailHaveUsedException {
         if (StringUtils.isNotEmpty(email)) {
             if (userMapper.isExistUserByEmail(email)) {
                 throw new EmailHaveUsedException(email);
             }
         }
-        return RegisterUser(email, null, password);
+        return RegisterUser(email, null, password,nickName);
     }
 
 
     @Override
-    public User RegistryUserByPhone(String phone, String password) throws PhoneHaveUsedException {
+    public User RegistryUserByPhone(String phone, String password,String nickName) throws PhoneHaveUsedException {
         if (StringUtils.isNotEmpty(phone)) {
             if (userMapper.isExistUserByEmail(phone)) {
                 throw new PhoneHaveUsedException(phone);
             }
         }
-        return RegisterUser(null, phone, password);
+        return RegisterUser(null, phone, password,nickName);
     }
 
     @Override
@@ -63,12 +62,13 @@ public class UserService implements IUserService, IBaseService {
         return  userMapper.findUserByPhone(phone);
     }
 
-    private User RegisterUser(String email, String phone, String password) {
+    private User RegisterUser(String email, String phone, String password,String nickName) {
 
         User user = new User();
         user.setEmail(email);
         user.setPassword(password);
         user.setPhone(phone);
+        user.setNickName(nickName);
         return userMapper.CreateUser(user);
     }
 

@@ -25,3 +25,4 @@ public class Image extends MultiMedia {
         this.height = height;
     }
 }
+
