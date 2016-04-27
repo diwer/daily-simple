@@ -24,9 +24,6 @@
         <property name="hostName" value="192.168.99.100"/>
     </bean>
 
-    <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
-        <property name="connectionFactory" ref="jedisConnectionFactory"></property>
-    </bean>
     <tx:annotation-driven transaction-manager="txManager"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">

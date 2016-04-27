@@ -16,4 +16,6 @@ public interface IUserService {
     boolean exchangePasswordByOldPassword(String userId, String oldPassword, String newPassword) throws Exception;
 
     User getUserByPhone(String phone);
+
+    User getUserByEmail(String email);
 }

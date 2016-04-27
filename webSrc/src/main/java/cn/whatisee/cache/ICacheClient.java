@@ -9,26 +9,26 @@ import java.util.Set;
 /**
  * Created by ppc on 2016/3/22.
  */
-public interface ICacheClient<T> {
-    <T> T get(String key) throws CacheException;
+public interface ICacheClient {
+    Object get(String key) throws CacheException;
 
-    <T> T getRange(String key, int start, int end) throws CacheException;
+    Object getRange(String key, int start, int end) throws CacheException;
 
     Set<String> keys(String key) throws CacheException;
 
-    <T> Map<String, T> getMulti(List<String> keys) throws CacheException;
+    Map<String, Object> getMulti(List<String> keys) throws CacheException;
 
-    <T> void set(String key, T value) throws CacheException;
+    void set(String key, Object value) throws CacheException;
 
-    <T> void set(String key, T value, int expire) throws CacheException;
+    void set(String key, Object value, int expire) throws CacheException;
 
     void delete(String key) throws CacheException;
 
     void delete(Collection<String> keys) throws CacheException;
 
-    <T> void replace(String key, T value) throws CacheException;
+    void replace(String key, Object value) throws CacheException;
 
-    <T> void replace(String key, T value, int expire) throws CacheException;
+    void replace(String key, Object value, int expire) throws CacheException;
 
-    void setType(Class<T> type);
+    void setObjectype(Class type);
 }

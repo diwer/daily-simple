@@ -62,6 +62,11 @@ public class UserServiceImpl implements IUserService, IBaseService {
         return  userMapper.findUserByPhone(phone);
     }
 
+    @Override
+    public User getUserByEmail(String email) {
+        return userMapper.findUserByEmail(email);
+    }
+
     private User RegisterUser(String email, String phone, String password,String nickName) {
 
         User user = new User();

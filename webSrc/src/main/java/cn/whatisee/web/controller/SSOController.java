@@ -1,5 +1,7 @@
 package cn.whatisee.web.controller;
 
+import cn.whatisee.cache.ICacheClient;
+import cn.whatisee.cache.redis.RedisClient;
 import cn.whatisee.model.User;
 import cn.whatisee.service.IUserService;
 import cn.whatisee.service.exception.EmailHaveUsedException;
@@ -9,11 +11,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
+import javax.jws.soap.SOAPBinding;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +33,13 @@ public class SSOController {
 
     private Logger logger = Logger.getLogger(this.getClass());
 
+    private ICacheClient<User> userSession=new RedisClient<>();
+
     @Autowired
     private IUserService userService;
 
 
-    @RequestMapping(value = "/register.html", method = RequestMethod.GET)
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView registerPage(HttpServletRequest request, ModelAndView mv) {
         Map<String, ?> map = RequestContextUtils.getInputFlashMap(request);
         List<String> errorList = null;
@@ -70,7 +76,7 @@ public class SSOController {
         return mv;
     }
 
-    @RequestMapping(value = "/registerSuccess.html", method = RequestMethod.POST)
+    @RequestMapping(value = "/registerSuccess", method = RequestMethod.GET)
     public ModelAndView registerSuccess(HttpServletRequest request, RedirectAttributes attr, ModelAndView mv) {
         Map<String, ?> map = RequestContextUtils.getInputFlashMap(request);
         try {
@@ -82,6 +88,7 @@ public class SSOController {
             mv.setViewName("/sso/registerSuccess");
 
         } catch (Exception ex) {
+//            System.out.print("注册成功页面,无User传入");
             logger.info("注册成功页面,无User传入");
             throw ex;
         }
@@ -89,4 +96,22 @@ public class SSOController {
         return mv;
     }
 
+    @RequestMapping(value = "login", method = RequestMethod.GET)
+    public ModelAndView loginPage(HttpServletRequest request, RedirectAttributes attr, ModelAndView mv) {
+
+
+        mv.setViewName("/sso/login");
+        return mv;
+    }
+
+    @RequestMapping(value = "login.do", method = RequestMethod.GET)
+    public ModelAndView login(HttpServletRequest request, @RequestParam int loginCount,@RequestParam String email,@RequestParam String  phone,@RequestParam String password, RedirectAttributes attr, ModelAndView mv) {
+
+
+
+
+
+        mv.setViewName("/sso/login");
+        return mv;
+    }
 }
