@@ -24,7 +24,7 @@ import java.util.List;
 @Service
 public class ImageServiceImpl implements IImageService {
 
-    private RedisClient<User> client = new RedisClient<>();
+
     private Logger logger = Logger.getLogger(ImageServiceImpl.class);
 
     @Autowired
@@ -39,8 +39,8 @@ public class ImageServiceImpl implements IImageService {
         String suffix = name.substring(name.lastIndexOf('.'));
         String id = UUIDUtil.getUUID();
         Image image = new Image();
-        user = client.get(sessionId);
-
+//      //user = client.get(sessionId);
+        user=new User();
         image.setId(id);
         image.setFileName(name);
         image.setCreaterId(user.getId());

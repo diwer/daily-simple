@@ -9,12 +9,12 @@ import java.util.Set;
 /**
  * Created by ppc on 2016/3/22.
  */
-public interface ICacheClient {
+public interface ICacheClient<T> {
     Object get(String key) throws CacheException;
 
     Object getRange(String key, int start, int end) throws CacheException;
 
-    Set<String> keys(String key) throws CacheException;
+    Set<String> getKeys(String key) throws CacheException;
 
     Map<String, Object> getMulti(List<String> keys) throws CacheException;
 
@@ -30,5 +30,5 @@ public interface ICacheClient {
 
     void replace(String key, Object value, int expire) throws CacheException;
 
-    void setObjectype(Class type);
+    void setType(Class<T> type);
 }

@@ -13,8 +13,7 @@ import java.util.Map;
 /**
  * Created by mingsheng on 16/4/25.
  */
-@Configuration
-@EnableWebMvc
+@Configuration("/spring-mvc.xml")
 public class AppConfig extends WebMvcConfigurerAdapter{
     @Bean(name ="freemarkerConfig")
     public FreeMarkerConfigurer freemarkerConfig() {

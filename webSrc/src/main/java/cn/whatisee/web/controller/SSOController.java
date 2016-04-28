@@ -33,7 +33,7 @@ public class SSOController {
 
     private Logger logger = Logger.getLogger(this.getClass());
 
-    private ICacheClient<User> userSession=new RedisClient<>();
+
 
     @Autowired
     private IUserService userService;

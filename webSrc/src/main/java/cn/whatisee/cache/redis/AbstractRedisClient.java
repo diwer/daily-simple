@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,19 +22,9 @@ import java.util.concurrent.TimeUnit;
  * Created by ppc on 2016/3/29.
  */
 
-public abstract class AbstractRedisClient extends RedisTemplate<String,Object> implements ICacheClient {
+public abstract class AbstractRedisClient<T> extends RedisTemplate<String,Object> implements ICacheClient<T> {
 
 
-    public AbstractRedisClient(JavaType type){
-        Jackson2JsonRedisSerializer<Object> serializer=new Jackson2JsonRedisSerializer<>(type);
-        this.setDefaultSerializer(serializer);
-    }
-
-    @Autowired
-    public void setRedisConnectionFactory(JedisConnectionFactory redisConnectionFactory) {
-        this.setConnectionFactory(redisConnectionFactory);
-
-    }
 
 
     @Override
@@ -61,7 +52,7 @@ public abstract class AbstractRedisClient extends RedisTemplate<String,Object> i
 
 
     @Override
-    public Set<String> keys(String key) {
+    public Set<String> getKeys(String key) {
             return keys(key + "*");
 
 
@@ -120,8 +111,13 @@ public abstract class AbstractRedisClient extends RedisTemplate<String,Object> i
     }
 
     @Override
-    public void setObjectype(Class type) {
-        throw new NotImplementedException();
+    public void setType(Class<T> type) {
+
+        Jackson2JsonRedisSerializer<T> serializer=new Jackson2JsonRedisSerializer<>(type);
+        this.setValueSerializer(serializer);
+        this.setKeySerializer(new StringRedisSerializer());
+
     }
+
 
 }
