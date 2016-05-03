@@ -1,13 +1,11 @@
 package cn.whatisee.service.impl;
 
 import cn.whatisee.config.StoreConfig;
-import cn.whatisee.cache.CacheException;
-import cn.whatisee.cache.redis.RedisClient;
-import cn.whatisee.core.util.QnUtil;
+import cn.whatisee.core.util.QniuUtil;
 import cn.whatisee.core.util.UUIDUtil;
 import cn.whatisee.mapper.ImageMapper;
+import cn.whatisee.mapper.UserMapper;
 import cn.whatisee.model.Image;
-import cn.whatisee.model.User;
 import cn.whatisee.service.IImageService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +20,7 @@ import java.util.List;
  * Created by mingsheng on 16/4/7.
  */
 @Service
-public class ImageServiceImpl implements IImageService {
+public class ImageServiceImpl extends BaseServiceImpl implements IImageService {
 
 
     private Logger logger = Logger.getLogger(ImageServiceImpl.class);
@@ -30,28 +28,27 @@ public class ImageServiceImpl implements IImageService {
     @Autowired
     private ImageMapper imageMapper;
 
-
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
-    public Image uploadAndCreateImage(byte[] bytes,final String fileName, String sessionId) throws IOException, CacheException {
-        User user;//上传文件的人
+    public Image uploadAndCreateImage(byte[] bytes, final String fileName, String userOd) throws IOException {
+
         String name = fileName;
         String suffix = name.substring(name.lastIndexOf('.'));
         String id = UUIDUtil.getUUID();
         Image image = new Image();
-//      //user = client.get(sessionId);
-        user=new User();
         image.setId(id);
         image.setFileName(name);
-        image.setCreaterId(user.getId());
+        image.setCreaterId(userOd);
         image.setCreateDate(new Date());
         image.setisDelete(false);
         image.setUrl(id + suffix);
         image.setStoreLocation(StoreConfig.Image.getName());
-        QnUtil.getInstance().uploadByByte(bytes, name, StoreConfig.Image.getName());
+        QniuUtil.getInstance().uploadByByte(bytes, name, StoreConfig.Image.getName());
         try {
             imageMapper.createImage(image);
-        }catch (Exception excp){
+        } catch (Exception excp) {
             logger.error(excp);
             return null;
         }
@@ -72,11 +69,11 @@ public class ImageServiceImpl implements IImageService {
 
     @Override
     public Image getImageById(String id) {
-        return  imageMapper.getImageById(id);
+        return imageMapper.getImageById(id);
     }
 
     @Override
     public List<Image> getImagesByIds(List<String> ids) {
-       return imageMapper.getImageByIds(ids);
+        return imageMapper.getImageByIds(ids);
     }
 }

@@ -3,7 +3,6 @@ package cn.whatisee.service.impl;
 import cn.whatisee.core.util.StringUtils;
 import cn.whatisee.mapper.UserMapper;
 import cn.whatisee.model.User;
-import cn.whatisee.service.IBaseService;
 import cn.whatisee.service.IUserService;
 import cn.whatisee.service.exception.EmailHaveUsedException;
 import cn.whatisee.service.exception.NotFindException;
@@ -17,7 +16,7 @@ import java.util.Objects;
  * Created by ppc on 2016/3/8.
  */
 @Service
-public class UserServiceImpl implements IUserService, IBaseService {
+public class UserServiceImpl extends BaseServiceImpl implements IUserService {
 
     @Autowired
     private UserMapper userMapper;

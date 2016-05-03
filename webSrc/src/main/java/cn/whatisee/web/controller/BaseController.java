@@ -1,19 +1,24 @@
 package cn.whatisee.web.controller;
 
-import cn.whatisee.config.ResponseConfig;
 import cn.whatisee.cache.CacheException;
+import cn.whatisee.config.ResponseConfig;
 import cn.whatisee.core.util.JsonUtil;
 import cn.whatisee.model.BaseJsonModel;
+import cn.whatisee.model.User;
 import cn.whatisee.service.IImageService;
+import cn.whatisee.service.ISessionService;
+import cn.whatisee.service.exception.NullSessionIdException;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
@@ -24,6 +29,8 @@ import java.io.IOException;
 
 public class BaseController {
 
+    @Autowired
+    protected ISessionService sessionService;
     @Autowired
     private IImageService imageService;
 
@@ -37,7 +44,9 @@ public class BaseController {
 
         if (file.getSize() > 0) {
             try {
-
+                User user=sessionService.getUser(sessionId);
+                if(user==null)
+                    throw new NullSessionIdException("");
                 imageService.uploadAndCreateImage(file.getBytes(),file.getOriginalFilename(),sessionId);
             } catch (CacheException e) {
 
@@ -50,6 +59,9 @@ public class BaseController {
                 reponse.setErrMessage("上传发生错误");
 
                 logger.error(e);
+            } catch (NullSessionIdException e) {
+                reponse.setErrCode(ResponseConfig.NoLogin.getIndex());
+                reponse.setErrMessage(ResponseConfig.NoLogin.getName());
             }
 
         } else {
@@ -59,4 +71,6 @@ public class BaseController {
 
         return JsonUtil.toJson(reponse);
     }
+
+
 }

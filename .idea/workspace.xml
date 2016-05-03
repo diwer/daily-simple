@@ -2,21 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b65fcc7-a4c0-495f-af21-ac0781d643bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_1_0_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/ImageUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/ISessionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/NullSessionIdException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/BaseServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/SessionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/test/testSessionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/ImageServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSrc/src/main/resources/spring-session.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_5_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/QnUtil.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/QniuUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/daily_simple_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/daily_simple_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/daily-simple.iml" afterPath="$PROJECT_DIR$/webSrc/daily-simple.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/logs/error.log" afterPath="$PROJECT_DIR$/webSrc/logs/error.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/logs/log.log" afterPath="$PROJECT_DIR$/webSrc/logs/log.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/ICacheClient.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/ICacheClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/pom.xml" afterPath="$PROJECT_DIR$/webSrc/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/RedisClient.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/RedisClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/BaseTestCase.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/BaseTestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/StringUtils.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/StringUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IImageService.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IImageService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/resources/spring-test.xml" afterPath="$PROJECT_DIR$/webSrc/src/main/resources/spring-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/target/classes/spring-test.xml" afterPath="$PROJECT_DIR$/webSrc/target/classes/spring-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/loginModel.java" afterPath="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/loginModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webSrc/target/daily-simple/WEB-INF/classes/spring-test.xml" afterPath="$PROJECT_DIR$/webSrc/target/daily-simple/WEB-INF/classes/spring-test.xml" />
     </list>
     <ignored path="daily.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,68 +74,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/RedisClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractRedisClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-479">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2661#2662#0" expanded="true" />
-                <element signature="e#2711#2712#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultValueOperations.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/DefaultValueOperations.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="145" column="16" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RedisClientTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1710">
-              <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+              <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1664#1665#0" expanded="false" />
+                <element signature="e#1711#1712#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSOController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1995">
+              <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java">
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-session.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webSrc/src/main/resources/spring-session.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="115" selection-start-line="14" selection-start-column="115" selection-end-line="14" selection-end-column="115" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webSrc/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/LoginModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding>
+                <element signature="e#271#272#0" expanded="false" />
+                <element signature="e#299#300#0" expanded="false" />
+                <element signature="e#341#342#0" expanded="false" />
+                <element signature="e#375#376#0" expanded="false" />
+                <element signature="e#407#408#0" expanded="false" />
+                <element signature="e#435#436#0" expanded="false" />
+                <element signature="e#477#478#0" expanded="false" />
+                <element signature="e#511#512#0" expanded="false" />
+                <element signature="e#546#547#0" expanded="false" />
+                <element signature="e#577#578#0" expanded="false" />
+                <element signature="e#625#626#0" expanded="false" />
+                <element signature="e#665#666#0" expanded="false" />
+                <element signature="e#699#700#0" expanded="false" />
+                <element signature="e#732#733#0" expanded="false" />
+                <element signature="e#781#782#0" expanded="false" />
+                <element signature="e#825#826#0" expanded="false" />
+                <element signature="e#861#862#0" expanded="false" />
+                <element signature="e#893#894#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,41 +170,30 @@
       <file leaf-file-name="RedisTemplate.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="551" column="18" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+            <state relative-caret-position="1200">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICacheClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/ICacheClient.java">
+      <file leaf-file-name="RedisConnectionUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisConnectionUtils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="375">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <file leaf-file-name="RedisAccessor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisAccessor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,22 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/SendMessageUtil.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/component/test/TestMailComponent.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/component/impl/MailComponentImpl.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/daily/index.jsp" />
-        <option value="$PROJECT_DIR$/webSrc/pom.xml" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/controller/DailyController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/controller/SSOController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/webapp/view/SSO/test.ftl" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/Url.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/webapp/daily/index.jsp" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/DailyController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/DailyConfig.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/SSO/test.html" />
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/SSO/register.ftl" />
@@ -208,7 +233,6 @@
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/resources/index.html" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexContrller.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/index/index.ftl" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/mapper/impl/UserMapperImpl.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/layout/layout.ftl" />
@@ -218,21 +242,38 @@
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/config/SNSConfig.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/config/SnsConfig.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/loginModel.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/webSrc/src/main/resources/spring-test.xml" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/BaseTestCase.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/RedisClient.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/ICacheClient.java" />
-        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java" />
         <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/SessionService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/NullSessionException.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/BaseService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IImageService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/ISessionService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/StringUtils.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/test/testSessionService.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/ImageServlet.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/ValiCodeController.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/SessionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/model/User.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/LoginModel.java" />
+        <option value="$PROJECT_DIR$/webSrc/pom.xml" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/resources/spring-session.xml" />
+        <option value="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -318,9 +359,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,30 +412,8 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,18 +436,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,302 +462,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daily-simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webSrc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whatisee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -773,6 +481,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -793,12 +504,8 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="cn.whatisee.cache.redis" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/index" />
-      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/resources" />
-      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views" />
-      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/view" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.whatisee.cache" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/SSO" />
@@ -809,11 +516,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="groovy.util.GroovyTestCase" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="cn.whatisee.cache" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/index" />
+      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/resources" />
+      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/webSrc/src/main/webapp/view" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisClientTest">
+  <component name="RunManager" selected="JUnit.RedisClientTest.deleteAll">
     <configuration default="false" name="RedisClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="daily-simple" />
@@ -826,84 +537,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RedisClientTest.testGetMulti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="daily-simple" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
-      <option name="METHOD_NAME" value="testGetMulti" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RedisClientTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="daily-simple" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
-      <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RedisClientTest.testKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="daily-simple" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
-      <option name="METHOD_NAME" value="testKeys" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -926,6 +559,84 @@
       <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
       <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
       <option name="METHOD_NAME" value="deleteAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedisClientTest.testDelete1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="daily-simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
+      <option name="METHOD_NAME" value="testDelete1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedisClientTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="daily-simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedisClientTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.whatisee.cache.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="daily-simple" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.whatisee.cache.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.whatisee.cache.test.RedisClientTest" />
+      <option name="METHOD_NAME" value="testSet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1373,18 +1084,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat8" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RedisClientTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testGetMulti" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testGet" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testKeys" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RedisClientTest.deleteAll" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RedisClientTest.deleteAll" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testDelete1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testDelete" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testSet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RedisClientTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RedisClientTest.deleteAll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testKeys" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testGet" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testGetMulti" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RedisClientTest.deleteAll" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testSet" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testDelete" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RedisClientTest.testDelete1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RedisClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1435,44 +1146,47 @@
       <workItem from="1461661194338" duration="8923000" />
       <workItem from="1461728537127" duration="7817000" />
       <workItem from="1461743278469" duration="7509000" />
-      <workItem from="1461827178970" duration="6994000" />
+      <workItem from="1461827178970" duration="9749000" />
+      <workItem from="1461898692647" duration="16420000" />
+      <workItem from="1462263202446" duration="3304000" />
+      <workItem from="1462269659654" duration="1305000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 06m 01s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 15m 44s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 16m 12s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 18m 08s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 20m 39s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 23m 29s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest - 2016.04.28 at 17h 24m 44s.xml">
-      <configuration name="RedisClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisClientTest_deleteAll - 2016.04.28 at 17h 21m 13s.xml">
+    <history-entry file="RedisClientTest_deleteAll - 2016.04.29 at 18h 27m 21s.xml">
       <configuration name="RedisClientTest.deleteAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_testGet - 2016.04.28 at 17h 01m 26s.xml">
-      <configuration name="RedisClientTest.testGet" configurationId="JUnit" />
+    <history-entry file="RedisClientTest_deleteAll - 2016.04.29 at 18h 28m 09s.xml">
+      <configuration name="RedisClientTest.deleteAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RedisClientTest_testKeys - 2016.04.28 at 17h 06m 56s.xml">
-      <configuration name="RedisClientTest.testKeys" configurationId="JUnit" />
+    <history-entry file="RedisClientTest_testDelete - 2016.04.29 at 18h 26m 15s.xml">
+      <configuration name="RedisClientTest.testDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testDelete1 - 2016.04.29 at 18h 23m 28s.xml">
+      <configuration name="RedisClientTest.testDelete1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testDelete1 - 2016.04.29 at 18h 24m 07s.xml">
+      <configuration name="RedisClientTest.testDelete1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testDelete1 - 2016.04.29 at 18h 25m 20s.xml">
+      <configuration name="RedisClientTest.testDelete1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testSet - 2016.04.29 at 18h 26m 37s.xml">
+      <configuration name="RedisClientTest.testSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testSet - 2016.04.29 at 18h 26m 45s.xml">
+      <configuration name="RedisClientTest.testSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testSet - 2016.04.29 at 18h 26m 52s.xml">
+      <configuration name="RedisClientTest.testSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisClientTest_testSet - 2016.04.29 at 18h 26m 59s.xml">
+      <configuration name="RedisClientTest.testSet" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172347000" />
+    <option name="totallyTimeSpent" value="196131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1485,46 +1199,46 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77709925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8366412" sideWeight="0.1578125" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41679388" sideWeight="0.8421875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06138934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4793893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4687023" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4687023" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41679388" sideWeight="0.8421875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47792998" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8380682" sideWeight="0.1578125" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8366412" sideWeight="0.1578125" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19628432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1533,21 +1247,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37862596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33047944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4687023" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7773973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77709925" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35114503" sideWeight="0.8421875" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41679388" sideWeight="0.8421875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48205128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47792998" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1596,15 +1310,45 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java</url>
-          <line>127</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java</url>
+          <line>130</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class</url>
+          <line>552</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class</url>
+          <line>555</line>
+          <properties />
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="44" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1621,222 +1365,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/support/RequestContextUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="418" column="0" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="495" column="0" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/daily_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/index/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/layout/layout.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/sso/register.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/views/sso/registerSuccess.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/mapper/impl/UserMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/multiaction/NoSuchRequestHandlingMethodException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/resources/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/EmailHaveUsedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/config/SnsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/loginModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="917" column="17" selection-start-line="917" selection-start-column="17" selection-end-line="917" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/serializer/GenericJackson2JsonRedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.3.3/jackson-databind-2.3.3.jar!/com/fasterxml/jackson/databind/JavaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/mapper/test/DailyMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="20" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/BaseTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1845,87 +1373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/DailyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IDailyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IImageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1937,35 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1974,54 +1396,380 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/PhoneHaveUsedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/EmailHaveUsedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/HaveUsedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/NotFindException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/exception/NullSessionIdException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/DefaultValueOperations.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="145" column="16" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
+        <state relative-caret-position="65">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/src.zip!/javax/security/auth/spi/LoginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-721">
+          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="195" column="26" selection-start-line="195" selection-start-column="26" selection-end-line="195" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/config/ResponseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IImageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/ISessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="1563" column="26" selection-start-line="1563" selection-start-column="26" selection-end-line="1563" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/ImageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/QniuUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/core/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/test/testSessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/ImageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/DailyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#handleFormUpload#0;class#BaseController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/ValiCodeController.java" />
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/service/impl/SessionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/ICacheClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="551" column="18" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+        <state relative-caret-position="195">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/redis/AbstractRedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-479">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar!/org/springframework/core/serializer/DefaultSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar!/org/springframework/core/serializer/support/SerializingConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/serializer/JdkSerializationRedisSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#866#867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar!/org/springframework/data/redis/core/RedisConnectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/cache/test/RedisClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
-          <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1711#1712#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/model/LoginModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#271#272#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#341#342#0" expanded="false" />
+            <element signature="e#375#376#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#546#547#0" expanded="false" />
+            <element signature="e#577#578#0" expanded="false" />
+            <element signature="e#625#626#0" expanded="false" />
+            <element signature="e#665#666#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+            <element signature="e#732#733#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
+            <element signature="e#825#826#0" expanded="false" />
+            <element signature="e#861#862#0" expanded="false" />
+            <element signature="e#893#894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/controller/SSOController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSrc/src/main/java/cn/whatisee/web/config/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/webSrc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="390">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/resources/spring-session.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="115" selection-start-line="14" selection-start-column="115" selection-end-line="14" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webSrc/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
           <folding />
         </state>
       </provider>

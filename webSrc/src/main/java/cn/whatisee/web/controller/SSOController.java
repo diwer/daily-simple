@@ -3,8 +3,11 @@ package cn.whatisee.web.controller;
 import cn.whatisee.cache.ICacheClient;
 import cn.whatisee.cache.redis.RedisClient;
 import cn.whatisee.model.User;
+import cn.whatisee.service.ISessionService;
 import cn.whatisee.service.IUserService;
 import cn.whatisee.service.exception.EmailHaveUsedException;
+import cn.whatisee.service.exception.NullSessionIdException;
+import cn.whatisee.web.model.LoginModel;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +21,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.jws.soap.SOAPBinding;
+import javax.security.auth.spi.LoginModule;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,14 +33,14 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping(value = "/sso")
-public class SSOController {
+public class SSOController extends BaseController {
 
     private Logger logger = Logger.getLogger(this.getClass());
 
-
-
     @Autowired
     private IUserService userService;
+
+
 
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
@@ -97,15 +101,30 @@ public class SSOController {
     }
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public ModelAndView loginPage(HttpServletRequest request, RedirectAttributes attr, ModelAndView mv) {
-
-
+    public ModelAndView loginPage(HttpServletRequest request,@ModelAttribute LoginModel model, RedirectAttributes attr, ModelAndView mv) {
+        if(model==null) {
+            LoginModel model = new LoginModel();
+            model
+            model.setLoginCount(0);
+        }
+        mv.addObject("model",model);
         mv.setViewName("/sso/login");
         return mv;
     }
 
     @RequestMapping(value = "login.do", method = RequestMethod.GET)
-    public ModelAndView login(HttpServletRequest request, @RequestParam int loginCount,@RequestParam String email,@RequestParam String  phone,@RequestParam String password, RedirectAttributes attr, ModelAndView mv) {
+    public ModelAndView login(HttpServletRequest request, @ModelAttribute LoginModel model,
+                              RedirectAttributes attr, ModelAndView mv) {
+        boolean isValid=true;
+        if(model.getLoginCount()>3){
+            try {
+
+
+            String valicode =sessionService.getString(model.getValidCode());
+            } catch (NullSessionIdException e) {
+                e.printStackTrace();
+            }
+        }
 
 
 

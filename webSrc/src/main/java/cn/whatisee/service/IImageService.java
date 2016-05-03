@@ -2,6 +2,7 @@ package cn.whatisee.service;
 
 import cn.whatisee.cache.CacheException;
 import cn.whatisee.model.Image;
+import cn.whatisee.service.exception.NullSessionIdException;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public interface IImageService {
 
-    Image uploadAndCreateImage(byte[] bytes, String fileName, String sessionId) throws IOException, CacheException;
+    Image uploadAndCreateImage(byte[] bytes, String fileName, String sessionId) throws IOException, CacheException, NullSessionIdException;
 
     List<Image> getImagesByCreateId(String id);
 

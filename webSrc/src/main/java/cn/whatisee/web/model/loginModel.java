@@ -3,7 +3,7 @@ package cn.whatisee.web.model;
 /**
  * Created by mingsheng on 16/4/27.
  */
-public class loginModel {
+public class LoginModel {
     private String email;
     private String phone;
     private String password;
@@ -40,5 +40,9 @@ public class loginModel {
 
     public void setLoginCount(int loginCount) {
         this.loginCount = loginCount;
+    }
+
+    public String getValidCode() {
+        return validCode;
     }
 }

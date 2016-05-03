@@ -4,10 +4,6 @@ import cn.whatisee.cache.CacheException;
 import cn.whatisee.cache.ICacheClient;
 import cn.whatisee.core.util.CollectionUtil;
 import cn.whatisee.core.util.StringUtils;
-import com.fasterxml.jackson.databind.JavaType;
-import org.apache.commons.lang.NotImplementedException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
@@ -28,7 +24,6 @@ public abstract class AbstractRedisClient<T> extends RedisTemplate<String,Object
 
 
     @Override
-    @SuppressWarnings("unchecked")
     public  Object get(String key) throws CacheException {
         try {
 
@@ -40,7 +35,6 @@ public abstract class AbstractRedisClient<T> extends RedisTemplate<String,Object
     }
 
     @Override
-    @SuppressWarnings("unchecked")
     public  Object getRange(String key, int start, int end) throws CacheException {
         try {
 
@@ -70,6 +64,7 @@ public abstract class AbstractRedisClient<T> extends RedisTemplate<String,Object
                 Map<String, Object> values = new HashMap<>();
 
                 for (int i = 0; i < listValue.size(); ++i) {
+                    if(listValue.get(i)!=null)
                     values.put(keys.get(i), listValue.get(i));
                 }
                 return values;
@@ -82,16 +77,18 @@ public abstract class AbstractRedisClient<T> extends RedisTemplate<String,Object
 
 
     @Override
-    public  void set(String key, Object value){
-        this.opsForValue().set(key, value);
+    public  void set(String key, Object value) throws CacheException {
+        set(key,value,0);
     }
 
     @Override
     public  void set(String key, Object value, int expire) throws CacheException {
         try {
-
-            this.opsForValue().set(key,  value, expire, TimeUnit.SECONDS);
-
+            if(expire>0) {
+                this.opsForValue().set(key, value, expire, TimeUnit.SECONDS);
+            }else {
+                this.opsForValue().set(key, value);
+            }
         } catch (Exception exception) {
             throw new CacheException("Error occured while setting Object from cache,key=" + key, exception);
         }

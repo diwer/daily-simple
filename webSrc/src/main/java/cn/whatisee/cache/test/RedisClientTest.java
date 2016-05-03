@@ -93,15 +93,17 @@ public class RedisClientTest extends BaseTestCase {
 
     }
 
-
+@Test
     public void testDelete() throws CacheException {
 
-        client.delete(id);
+        initUser();
+    client.set(user.getId(),user);
+        client.delete(user.getId());
         User cacheUser = (User) client.get(user.getId());
         Assert.assertNull(cacheUser);
 
     }
-
+@Test
     public void testDelete1() throws CacheException {
         testSet();
         String nId = UUID.randomUUID().toString();
@@ -113,7 +115,7 @@ public class RedisClientTest extends BaseTestCase {
         keys.add(id);
         client.delete(keys);
         Map<String, Object> map = client.getMulti(keys);
-        Assert.assertNull(map);
+        Assert.assertNotNull(map);
         try {
             Assert.assertFalse(map.containsKey(nId));
             Assert.assertFalse(map.containsKey(id));
