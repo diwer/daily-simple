@@ -4,8 +4,8 @@
     <data-source name="MySQL - daily_db@localhost" uuid="159f5e1a-cb78-44e3-bba8-c64e62a12f95">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>daily_db.*</schema-pattern>
-      <default-schemas>daily_db.*</default-schemas>
+      <introspection-scope>daily_db:*</introspection-scope>
+      <resolve-scope>daily_db:*</resolve-scope>
     </data-source>
   </component>
 </project>

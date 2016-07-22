@@ -1,9 +1,6 @@
 package cn.whatisee.web.controller;
 
-import cn.whatisee.cache.ICacheClient;
-import cn.whatisee.cache.redis.RedisClient;
 import cn.whatisee.model.User;
-import cn.whatisee.service.ISessionService;
 import cn.whatisee.service.IUserService;
 import cn.whatisee.service.exception.EmailHaveUsedException;
 import cn.whatisee.service.exception.NullSessionIdException;
@@ -14,14 +11,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import javax.jws.soap.SOAPBinding;
-import javax.security.auth.spi.LoginModule;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
@@ -103,8 +96,8 @@ public class SSOController extends BaseController {
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public ModelAndView loginPage(HttpServletRequest request,@ModelAttribute LoginModel model, RedirectAttributes attr, ModelAndView mv) {
         if(model==null) {
-            LoginModel model = new LoginModel();
-            model
+             model = new LoginModel();
+//            model
             model.setLoginCount(0);
         }
         mv.addObject("model",model);
