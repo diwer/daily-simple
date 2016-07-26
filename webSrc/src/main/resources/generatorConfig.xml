@@ -36,16 +36,17 @@
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
         <!--生成SQLMAP文件 -->
-        <sqlMapGenerator targetPackage="cn.whatisee.mapper"  targetProject="src/main/mybaitsgen/resources">
+        <sqlMapGenerator targetPackage="cn.whatisee.mapper"  targetProject="src/main/mybaitsgen/xml">
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
         <!--生成Dao文件 可以配置 type="XMLMAPPER"生成xml的dao实现  context id="DB2Tables" 修改targetRuntime="MyBatis3"  -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.whatisee.mapper"  targetProject="ssrc/main/mybaitsgen/service">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.whatisee.mapper"  targetProject="src/main/mybaitsgen/mapper">
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
         <!--对应数据库表 mysql可以加入主键自增 字段命名 忽略某字段等-->
         <table tableName="dy_user" domainObjectName="User" >
+
         </table>
         <table tableName="dy_daily" domainObjectName="Daily">
 

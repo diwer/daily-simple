@@ -27,12 +27,12 @@ public class RedisClientTest extends BaseTestCase {
     private void initUser() {
 
         user.setId(id);
-        user.setCreateTime(new Date());
+        user.setCreatetime(new Date());
         user.setEmail("diwers@163.com");
         user.setPhone("13041110273");
-        user.setNickName("ming");
+        user.setNickname("ming");
         user.setPassword(MD5Util.parseStrToMd5U16("123456"));
-        user.setLastLoginTime(new Date());
+        user.setLastlogintime(new Date());
         client.setType(User.class);
     }
 

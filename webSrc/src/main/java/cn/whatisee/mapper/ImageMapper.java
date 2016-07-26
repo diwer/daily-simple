@@ -1,19 +1,32 @@
 package cn.whatisee.mapper;
 
 import cn.whatisee.model.Image;
-
+import cn.whatisee.model.ImageExample;
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
-/**
- * Created by mingsheng on 16/4/6.
- */
+@Repository
 public interface ImageMapper {
+    int countByExample(ImageExample example);
 
-    Image getImageById(String  id);
-    List<Image> getImageByIds(List<String> ids);
-    Image createImage(Image image);
-    boolean deleteImageById(String id);
+    int deleteByExample(ImageExample example);
 
-    List<Image> getImageByCreateId(String createId);
+    int deleteByPrimaryKey(String id);
 
+    int insert(Image record);
+
+    int insertSelective(Image record);
+
+    List<Image> selectByExample(ImageExample example);
+
+    Image selectByPrimaryKey(String id);
+
+    int updateByExampleSelective(@Param("record") Image record, @Param("example") ImageExample example);
+
+    int updateByExample(@Param("record") Image record, @Param("example") ImageExample example);
+
+    int updateByPrimaryKeySelective(Image record);
+
+    int updateByPrimaryKey(Image record);
 }

@@ -1,24 +1,38 @@
 package cn.whatisee.mapper;
 
-import cn.whatisee.mapper.exception.NotFindException;
 import cn.whatisee.model.Daily;
-
+import cn.whatisee.model.DailyExample;
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
-/**
- * Created by ppc on 2016/3/8.
- */
+@Repository
 public interface DailyMapper {
+    int countByExample(DailyExample example);
 
-    List<Daily> findDailiesByUserId(String userId);
+    int deleteByExample(DailyExample example);
 
-    Daily findDailyById(String id);
+    int deleteByPrimaryKey(String id);
 
-    Daily createDaily(Daily daily);
+    int insert(Daily record);
 
-    List<Daily> findDailiesByUserIdPaging(String userId, int pageIndex, int pageSize);
+    int insertSelective(Daily record);
 
-    Daily UpdateDaily(Daily daily) throws IllegalAccessException, NotFindException;
+    List<Daily> selectByExampleWithBLOBs(DailyExample example);
 
-//    List<Daily> findDailiesByAttrandValuePaging(String attr,Object value,int pageSize);
+    List<Daily> selectByExample(DailyExample example);
+
+    Daily selectByPrimaryKey(String id);
+
+    int updateByExampleSelective(@Param("record") Daily record, @Param("example") DailyExample example);
+
+    int updateByExampleWithBLOBs(@Param("record") Daily record, @Param("example") DailyExample example);
+
+    int updateByExample(@Param("record") Daily record, @Param("example") DailyExample example);
+
+    int updateByPrimaryKeySelective(Daily record);
+
+    int updateByPrimaryKeyWithBLOBs(Daily record);
+
+    int updateByPrimaryKey(Daily record);
 }

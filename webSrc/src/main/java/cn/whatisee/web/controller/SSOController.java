@@ -1,16 +1,17 @@
 package cn.whatisee.web.controller;
 
+import cn.whatisee.core.util.JsonUtil;
 import cn.whatisee.model.User;
 import cn.whatisee.service.IUserService;
 import cn.whatisee.service.exception.EmailHaveUsedException;
 import cn.whatisee.service.exception.NullSessionIdException;
 import cn.whatisee.web.model.LoginModel;
+import com.sun.org.apache.regexp.internal.RE;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.support.RequestContextUtils;
@@ -34,8 +35,6 @@ public class SSOController extends BaseController {
     private IUserService userService;
 
 
-
-
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView registerPage(HttpServletRequest request, ModelAndView mv) {
         Map<String, ?> map = RequestContextUtils.getInputFlashMap(request);
@@ -56,7 +55,7 @@ public class SSOController extends BaseController {
         List<String> errorlist = new ArrayList<>();
         User nuser = null;
         try {
-            nuser = userService.RegistryUserByEmail(user.getEmail(), user.getPassword(), user.getNickName());
+            nuser = userService.RegistryUserByEmail(user.getEmail(), user.getPassword(), user.getNickname());
         } catch (EmailHaveUsedException e) {
 
             errorlist.add("邮箱已被注册,请更换邮箱");
@@ -94,33 +93,42 @@ public class SSOController extends BaseController {
     }
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public ModelAndView loginPage(HttpServletRequest request,@ModelAttribute LoginModel model, RedirectAttributes attr, ModelAndView mv) {
-        if(model==null) {
-             model = new LoginModel();
+    public ModelAndView loginPage(HttpServletRequest request, @ModelAttribute LoginModel model,ModelAndView mv, RedirectAttributes attr) {
+        if (model == null) {
+            model = new LoginModel();
 //            model
             model.setLoginCount(0);
         }
-        mv.addObject("model",model);
+
+        User user = userService.getUserByEmail("diwers@163.com");
+        if (user == null) {
+            user = new User();
+            user.setNickname("diwer");
+        }
+        request.getSession().setAttribute("user", user);
+
+        User s = (User) request.getSession().getAttribute("user");
+        if (s == null) {
+            user = new User();
+            user.setNickname("s");
+        }
+        mv.addObject("user",user);
         mv.setViewName("/sso/login");
-        return mv;
+       return  mv;
+
     }
 
-    @RequestMapping(value = "login.do", method = RequestMethod.GET)
+    @RequestMapping(value = "login.do", method = RequestMethod.POST)
     public ModelAndView login(HttpServletRequest request, @ModelAttribute LoginModel model,
                               RedirectAttributes attr, ModelAndView mv) {
-        boolean isValid=true;
-        if(model.getLoginCount()>3){
+        boolean isValid = true;
+        if (model.getLoginCount() > 3) {
             try {
-
-
-            String valicode =sessionService.getString(model.getValidCode());
+                String valicode = sessionService.getString(model.getValidCode());
             } catch (NullSessionIdException e) {
                 e.printStackTrace();
             }
         }
-
-
-
 
 
         mv.setViewName("/sso/login");

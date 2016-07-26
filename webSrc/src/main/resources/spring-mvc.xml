@@ -13,19 +13,32 @@
        default-lazy-init="true">
     <description>Spring公共配置</description>
 
-    <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
-    <mvc:view-controller path="/" view-name="redirect:/" />
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
+
+    <mvc:view-controller path="/" view-name="redirect:/index/index" />
+
     <mvc:annotation-driven></mvc:annotation-driven>
+
     <!--// <context:annotation-config/>-->
+
     <context:component-scan base-package="cn.whatisee"/>
-    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-        <property name="usePool" value="true"/>
-        <property name="port" value="6379"/>
-        <property name="hostName" value="localhost"/>
-    </bean>
+
 
     <tx:annotation-driven transaction-manager="txManager"/>
 
+
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+    <bean name="mapperScannerConfig" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionTemplateBeanName" value="sqlSession"/>
+        <property name="basePackage" value="cn.whatisee.mapper"/>
+    </bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
@@ -57,8 +70,13 @@
         <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=UTF-8"></property>
         <property name="exposeRequestAttributes" value="true" />
-        <property name="exposeSessionAttributes" value="true" />
-        <property name="exposeSpringMacroHelpers" value="true" />
+        //将传想freemarker的model放置session
+        <!--<property name="exposeSessionAttributes" value="true" />-->
+        <!--<property name="exposeSpringMacroHelpers" value="true" />-->
+    </bean>
+    <bean id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/views/"/>
+        <property name="defaultEncoding" value="UTF-8"/>
     </bean>
     <!--用freemarker-->
     <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->

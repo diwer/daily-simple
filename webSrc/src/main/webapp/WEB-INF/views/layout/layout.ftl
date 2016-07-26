@@ -16,8 +16,8 @@
     <#nested>
 </div>
 
-<script src="/resources/lib/jquery.js"></script>
-<script src="/resources/lib/bootstrap.js"></script>
+<script src="/resources/js/lib/jquery.js"></script>
+<script src="/resources/js/lib/bootstrap.js"></script>
 </body>
 </html>
 </#macro>
